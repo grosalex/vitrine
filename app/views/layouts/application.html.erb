@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vitrine</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= html_import_tag 'application'%>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<paper-button>flat button</paper-button>
+<paper-button raised>raised button</paper-button>
+<paper-button noink>No ripple effect</paper-button>
+<%= yield %>
+
+</body>
+</html>
